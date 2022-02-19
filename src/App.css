@@ -1,38 +1,193 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  background-color: white;
   display: flex;
   flex-direction: column;
+  font-family: 'Roboto-Serif', sans-serif;
+  margin: 0;
+  margin-top: 20px;
+}
+.locationName h1{
+  padding:5px;
+  margin:10px;
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+ 
+}
+.locationName h3{
+  margin-top: 0px !important;
+  padding-top: 0px !important;
+  font-size: medium;
+}
+.location{
+  display: flex;
+  align-items: flex-start;
+  color:blue;
+  margin:10px;
+  margin-top: 0px !important;
+}
+.locationPlace{
+  margin-top: 10px;
+  margin-left:2px;
+}
+.locationIcon{
+  font-size: 25px;
+  padding:5px;
+}
+.hotelType{
+  display: flex;
+  flex-direction: row;
+  padding:5px;
+  padding: top 0px, i !important;
+  font-size: 15px;
+  font-weight: 500;
+  color: gray;
+  margin:10px;
+}
+.buttons{
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin:10px;
+}   
+/* .button h6{
+  margin-top:0px !important;
+} */
+.button1 button{
+  padding:10px;
+  margin-right:10px;
+  cursor: pointer;
+  font-size: small;
+  font-weight: 500;
+  border-radius: 30px;
+  border:none;
+  background-color: rgb(233, 238, 240);
 }
-
-.App-link {
-  color: #61dafb;
+.rating{
+  font-size: medium;
+  font-weight: 600;
+  padding:5px !important;
+  margin: 15px !important;;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ratingReviews{
+  color:gray;
+}
+.rating i {
+  color: #a2a2a2;
+}
+.rating .checked {
+  color: #dda200;
+}
+.underLine{
+ color:lightgray;
+ border: 0.2px solid lightgray;
+}
+.priceDetails{
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  margin:10px;
+}
+strike{
+  color:gray;
+  font-size: small;
+  font-weight: 600;
+}
+.price1{
+   font-size: medium;
+   font-weight: 600;
+}
+.price2{
+  margin:15px;
+}
+.perNight{
+  font-size: small;;
+}
+.priceAndDetails{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn{
+  width:12vw;
+  height:50px;
+  padding:5px;
+  margin-right:10px;
+  cursor: pointer;
+  color:blue;
+  font-size: medium;
+  font-weight: 600;
+  background: transparent;
+  border:1px solid blue;
+  border-radius: 5px;
+}
+.btn:hover{
+  background-color: blue;
+  color:white
+}
+.RoomsList{
+  display: flex; 
+  flex-wrap: wrap;  
+  justify-content: center; 
+  border-radius: 10px;
+}
+.container{
+  position:relative
+}
+.image-container {
+  width:65vh;
+  justify-content: flex-start;
+  margin:5px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+.container img{
+  width: 100%;
+  height:auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.container .image-btn{
+  position: absolute;
+  top: 0%;
+  right:1%;
+  margin:5px;
+  padding:5px;
+  background-color: white;
+  border-radius: 40px;
+  color: black;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+.save-icon{
+  padding:5px;
+  color:#a11818
+}
+.image-container:hover {
+	cursor: pointer;
+}
+.rating{
+  padding:5px;
+}
+@media(max-width:768px){
+  .btn{
+    width:18vw;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media(max-width:425px){
+  .btn{
+    width:35vw;
+    height:50px;
+    padding:5px;
+    margin:10px;
+    cursor: pointer;
+    color:blue;
+    font-size: medium;
+    font-weight: 600;
+    background: transparent;
+    border:none;
+    border-radius: 5px;
   }
 }
