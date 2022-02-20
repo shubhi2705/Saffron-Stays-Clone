@@ -165,6 +165,9 @@ strike{
   padding:5px;
   color:#a11818
 }
+.image-btn:hover{
+  background-color: blue;
+}
 .image-container:hover {
 	cursor: pointer;
 }
