@@ -8,7 +8,7 @@ const Hotels = ({rooms}) => {
 			{rooms.map((room) => (
 				<div className='image-container' >
 					<div className='container'>
-					<img className='img' src='https://tinyurl.com/2m6e4kk7' alt='room-image'></img>
+					<img className='img' src='https://tinyurl.com/2m6e4kk7' alt='room'></img>
                     <button className='image-btn '>
 					<i class="fa fa-heart save-icon"></i>
 							Save
