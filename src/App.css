@@ -107,9 +107,11 @@ strike{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-grow: 1;
+  flex-shrink: 0;
 }
 .btn{
-  width:12vw;
+  width:10vw;
   height:50px;
   padding:5px;
   margin-right:10px;
@@ -174,17 +176,27 @@ strike{
 .rating{
   padding:5px;
 }
-@media(max-width:768px){
+@media(max-width:1024px){
+  .priceAndDetails{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink:10px;
+  }
   .btn{
-    width:18vw;
+    width:110px;
+    margin-left:-10px;
   }
 }
 @media(max-width:425px){
   .btn{
-    width:35vw;
+    width:25vw;
     height:50px;
     padding:5px;
     margin:10px;
+    margin-left:3px;
+    margin-right: 10px;
     cursor: pointer;
     color:blue;
     font-size: medium;
@@ -193,4 +205,38 @@ strike{
     border:none;
     border-radius: 5px;
   }
+  @media(max-width:375px){
+  .btn{
+    width:30vw;
+    height:50px;
+    padding:5px;
+    margin:10px;
+    margin-left:-10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color:blue;
+    font-size: medium;
+    font-weight: 600;
+    background: transparent;
+    border:none;
+    border-radius: 5px;
+  }
+}
+@media(max-width:320px){
+  .btn{
+    width:35vw;
+    height:50px;
+    padding:6px;
+    margin:10px;
+    margin-left:-10px;
+    margin-right: 10px;
+    cursor: pointer;
+    color:blue;
+    font-size: medium;
+    font-weight: 600;
+    background: transparent;
+    border:none;
+    border-radius: 5px;
+  }
+}
 }
